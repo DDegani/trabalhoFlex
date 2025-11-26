@@ -1,10 +1,35 @@
-.brasao > h1{
+@import url('fonts.googleapis.com');
 
-    width: 120px;
-    height: 120px;
-    display:flex;
-   
+
+body{
+    background-color: azure;
+
+
 }
 
+ 
 
+.cabecalho > h1{
+
+    display: flex;
+    font-size: 28px;
+    margin:10px;
+    margin-top: 40px;
+    text-align: left;
+    font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.botao{
+
+   border-radius: 120px;
+   margin:4px;
+   font-family: Arial, Helvetica, sans-serif;
+   cursor:pointer;
+   padding:12px;
+   box-shadow: 0, 0, 0 10px;
+   border:2px;
+   background-color: #70A2E6;
+   margin: 6px;
+}
 
