@@ -1,35 +1,93 @@
 @import url('fonts.googleapis.com');
 
 
-body{
+body {
     background-color: azure;
 
 
 }
 
- 
 
-.cabecalho > h1{
+
+.cabecalho>h1 {
 
     display: flex;
     font-size: 28px;
-    margin:10px;
+    margin: 10px;
     margin-top: 40px;
     text-align: left;
     font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-.botao{
-
-   border-radius: 120px;
-   margin:4px;
-   font-family: Arial, Helvetica, sans-serif;
-   cursor:pointer;
-   padding:12px;
-   box-shadow: 0, 0, 0 10px;
-   border:2px;
-   background-color: #70A2E6;
-   margin: 6px;
+ /* arrumar espaço entre os botões */
+.botao {
+    
+    padding: 12px 20px;
+    border: none;
+    border-radius: 24px;
+    background: #4a6cff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0.25s ease;
+    transform: 0.25s ease;
 }
 
+/* ================================
+   EFEITO AO PASSAR O MOUSE (HOVER)
+   ================================ */
+   
+.botao:hover {
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    
+}
+
+
+/* ================================
+   EFEITO AO CLICAR (ACTIVE)
+   ================================ */
+
+.botao:active{
+
+    transform:translate(Y);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.20);
+
+}
+
+
+/* ================================
+   ANIMAÇÃO OPCIONAL: PULSAR
+   Para ativar, coloque class="pulse" no botão
+   ================================ */
+
+.botao.pulse{
+
+    animation: pulse 1.6 infinite ease-in-out;
+
+}
+
+/* Animação "pulse" — leve zoom e volta */
+
+@keyframes pulse {
+
+        0% {transform: scale(1); }
+        50% {transforme: scale(1.05); }
+        100% {transform: scale(1); }
+    
+}
+
+
+/* ================================
+   EFEITO OPCIONAL: GLOW (brilho)
+   Para ativar, coloque class="glow" no botão
+   ================================ */
+
+.botao.glow:hover {
+
+    box-shadow: 0 0 15px rgba(74, 108, 255, 0.8);
+
+}
